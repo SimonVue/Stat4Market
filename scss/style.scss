@@ -1,0 +1,13 @@
+@import "_mixin";
+@import "_import_styles";
+@import "_nav-menu";
+@import "_menu-burger";
+
+
+
+body {
+  background: #e5e5e5;
+  color: $mainColor;
+  font-family: 'Lato', sans-serif;
+}
+

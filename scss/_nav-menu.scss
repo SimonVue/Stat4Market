@@ -1,0 +1,126 @@
+
+.container {
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    height: 90px;
+    white-space: nowrap;
+    @media (max-width: 600px) {
+      height: 50px;
+    }
+  }
+
+  .nav__logo {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .nav__logo_mobile {
+    display: none;
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+  .nav__callOrder {
+    //white-space: nowrap;
+    .nav__button {
+      padding: 13px 26px;
+      color: #ff834e;
+      border: 1px solid #ff834e;
+      margin-right: 30px;
+      transition: .3s;
+      &:hover {
+        color: $pinkColor;
+        border: 1px solid #fff;
+      }
+      @media (max-width: 600px) {
+      margin: 0 auto;
+      padding: 5px 12px;
+        font-size: 14px;
+      }
+    }
+    .nav__number {
+      //margin-right: calc(5px + (56 - 5) * ((100vw - 1300px) / (1920 - 1300)));
+      margin-right: 91px;
+      transition: .3s;
+      &:hover {
+        color: $pinkColor;
+      }
+      @media (max-width: 720px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 426px) {
+      display: none;
+    }
+  }
+
+  .nav__menu {
+    width: 598px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    &-list-item {
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        color: $pinkColor;
+      }
+     }
+
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+}
+.filter__size {
+  position: relative;
+}
+details>summary {
+  list-style: none;
+  &:hover {
+    .fa-solid {
+      color: $pinkColor;
+    }
+  }
+}
+summary::-webkit-details-marker {
+  display: none
+}
+.fa-solid {
+  margin-left: 11px;
+  &:hover {
+    color: $pinkColor;
+  }
+}
+
+.filter__size-drop {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 145px;
+  height: auto;
+  padding: 15px 22px;
+  background: #fff;
+  color: #6F6E6E;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1001;
+}
+
+
+.filter__size-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+

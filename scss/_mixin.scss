@@ -1,0 +1,9 @@
+//REM
+@function rem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+$mainColor: #331A2F;
+$pinkColor: #CF51CE;
+

@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #331A2F;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container .nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  height: 90px;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .container .nav {
+    height: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .container .nav__logo {
+    display: none;
+  }
+}
+.container .nav__logo_mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .container .nav__logo_mobile {
+    display: block;
+  }
+}
+.container .nav__callOrder .nav__button {
+  padding: 13px 26px;
+  color: #ff834e;
+  border: 1px solid #ff834e;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+.container .nav__callOrder .nav__button:hover {
+  color: #CF51CE;
+  border: 1px solid #fff;
+}
+@media (max-width: 600px) {
+  .container .nav__callOrder .nav__button {
+    margin: 0 auto;
+    padding: 5px 12px;
+    font-size: 14px;
+  }
+}
+.container .nav__callOrder .nav__number {
+  margin-right: 91px;
+  transition: 0.3s;
+}
+.container .nav__callOrder .nav__number:hover {
+  color: #CF51CE;
+}
+@media (max-width: 720px) {
+  .container .nav__callOrder .nav__number {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .container .nav__callOrder {
+    display: none;
+  }
+}
+.container .nav__menu {
+  width: 598px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.container .nav__menu-list-item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .nav__menu-list-item:hover {
+  color: #CF51CE;
+}
+@media (max-width: 1150px) {
+  .container .nav__menu {
+    display: none;
+  }
+}
+
+.filter__size {
+  position: relative;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary:hover .fa-solid {
+  color: #CF51CE;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.fa-solid {
+  margin-left: 11px;
+}
+.fa-solid:hover {
+  color: #CF51CE;
+}
+
+.filter__size-drop {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 145px;
+  height: auto;
+  padding: 15px 22px;
+  background: #fff;
+  color: #6F6E6E;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1001;
+}
+
+.filter__size-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.menu-burger {
+  display: none;
+}
+@media (max-width: 1150px) {
+  .menu-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+.menu-burger span, .menu-burger::before, .menu-burger::after {
+  left: 4px;
+  position: absolute;
+  width: 17.5px;
+  height: 1.25px;
+  transition: all 0.3s ease 0s;
+  background: #331A2F;
+  z-index: 1;
+}
+.menu-burger::before, .menu-burger::after {
+  content: "";
+}
+.menu-burger::before {
+  top: 2px;
+}
+.menu-burger::after {
+  bottom: 4px;
+}
+.menu-burger span {
+  top: 45%;
+  transform: scale(1) translate(0px, -50%);
+}
+.menu-burger .menu-burger-circle {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width: 35px;
+  height: 35px;
+  background-color: #292929;
+  border-radius: 50%;
+  box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+._close span {
+  background: #331A2F;
+  transform: scale(0) translate(0px, -50%);
+}
+._close::before {
+  background: #331A2F;
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+._close::after {
+  background: #331A2F;
+  top: 45%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
+
+body {
+  background: #e5e5e5;
+  color: #331A2F;
+  font-family: "Lato", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
