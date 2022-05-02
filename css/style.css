@@ -161,35 +161,25 @@ h6 {
 .container .nav__menu-list-item:hover {
   color: #CF51CE;
 }
-@media (max-width: 1150px) {
-  .container .nav__menu {
-    display: none;
-  }
-}
-
-.filter__size {
+.container .nav__menu-drop {
   position: relative;
 }
-
-details > summary {
+.container .nav__menu-drop .menu-drop-title {
   list-style: none;
 }
-details > summary:hover .fa-solid {
+.container .nav__menu-drop .menu-drop-title:hover .fa-solid {
   color: #CF51CE;
 }
-
-summary::-webkit-details-marker {
+.container .nav__menu-drop summary::-webkit-details-marker {
   display: none;
 }
-
-.fa-solid {
+.container .nav__menu-drop .fa-solid {
   margin-left: 11px;
 }
-.fa-solid:hover {
+.container .nav__menu-drop .fa-solid:hover {
   color: #CF51CE;
 }
-
-.filter__size-drop {
+.container .nav__menu-drop .submenu-drop {
   position: absolute;
   top: 45px;
   left: 0;
@@ -201,11 +191,15 @@ summary::-webkit-details-marker {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 1001;
 }
-
-.filter__size-item {
+.container .nav__menu-drop .submenu-drop-item {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
+}
+@media (max-width: 1150px) {
+  .container .nav__menu {
+    display: none;
+  }
 }
 
 .menu-burger {
