@@ -113,23 +113,6 @@ h6 {
     display: block;
   }
 }
-.container .nav__callOrder .nav__button {
-  padding: 13px 26px;
-  color: #ff834e;
-  border: 1px solid #ff834e;
-  margin-right: 30px;
-  transition: 0.3s;
-}
-.container .nav__callOrder .nav__button:hover {
-  background: #ab42aa;
-}
-@media (max-width: 600px) {
-  .container .nav__callOrder .nav__button {
-    margin: 0 auto;
-    padding: 5px 12px;
-    font-size: 14px;
-  }
-}
 .container .nav__menu {
   width: 598px;
   display: flex;
@@ -194,7 +177,7 @@ h6 {
 .container .nav__callOrder .nav__number:hover .fa-phone {
   color: #CF51CE;
 }
-@media (max-width: 720px) {
+@media (max-width: 770px) {
   .container .nav__callOrder .nav__number {
     display: none;
   }

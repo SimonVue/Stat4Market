@@ -28,24 +28,7 @@
       display: block;
     }
   }
-  .nav__callOrder {
-    //white-space: nowrap;
-    .nav__button {
-      padding: 13px 26px;
-      color: #ff834e;
-      border: 1px solid #ff834e;
-      margin-right: 30px;
-      transition: .3s;
-      &:hover {
-        background: #ab42aa;
-      }
-      @media (max-width: 600px) {
-      margin: 0 auto;
-      padding: 5px 12px;
-        font-size: 14px;
-      }
-    }
-  }
+
   .nav__menu {
     width: 598px;
     display: flex;
@@ -115,7 +98,7 @@
           color: $pinkColor;
         }
       }
-      @media (max-width: 720px) {
+      @media (max-width: 770px) {
         display: none;
       }
     }
