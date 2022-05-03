@@ -121,31 +121,13 @@ h6 {
   transition: 0.3s;
 }
 .container .nav__callOrder .nav__button:hover {
-  color: #CF51CE;
-  border: 1px solid #fff;
+  background: #ab42aa;
 }
 @media (max-width: 600px) {
   .container .nav__callOrder .nav__button {
     margin: 0 auto;
     padding: 5px 12px;
     font-size: 14px;
-  }
-}
-.container .nav__callOrder .nav__number {
-  margin-right: 91px;
-  transition: 0.3s;
-}
-.container .nav__callOrder .nav__number:hover {
-  color: #CF51CE;
-}
-@media (max-width: 720px) {
-  .container .nav__callOrder .nav__number {
-    display: none;
-  }
-}
-@media (max-width: 426px) {
-  .container .nav__callOrder {
-    display: none;
   }
 }
 .container .nav__menu {
@@ -175,6 +157,7 @@ h6 {
 }
 .container .nav__menu-drop .fa-solid {
   margin-left: 11px;
+  transition: 0.3s;
 }
 .container .nav__menu-drop .fa-solid:hover {
   color: #CF51CE;
@@ -200,6 +183,37 @@ h6 {
   .container .nav__menu {
     display: none;
   }
+}
+.container .nav__callOrder .nav__number {
+  margin-right: 91px;
+  transition: 0.3s;
+}
+.container .nav__callOrder .nav__number:hover {
+  color: #CF51CE;
+}
+.container .nav__callOrder .nav__number:hover .fa-phone {
+  color: #CF51CE;
+}
+@media (max-width: 720px) {
+  .container .nav__callOrder .nav__number {
+    display: none;
+  }
+}
+.container .nav__callOrder .fa-phone {
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+  transition: 0.3s;
+}
+.container .nav__callOrder .nav__button {
+  padding: 15px 33px;
+  border: none;
+  border-radius: 12px;
+  font-size: 23px;
+  color: #fff;
+  margin-right: 30px;
+  transition: 0.3s;
+  background: #CF51CE;
 }
 
 .menu-burger {

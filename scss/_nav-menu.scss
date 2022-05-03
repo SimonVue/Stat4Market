@@ -37,8 +37,7 @@
       margin-right: 30px;
       transition: .3s;
       &:hover {
-        color: $pinkColor;
-        border: 1px solid #fff;
+        background: #ab42aa;
       }
       @media (max-width: 600px) {
       margin: 0 auto;
@@ -46,23 +45,7 @@
         font-size: 14px;
       }
     }
-    .nav__number {
-      //margin-right: calc(5px + (56 - 5) * ((100vw - 1300px) / (1920 - 1300)));
-      margin-right: 91px;
-      transition: .3s;
-      &:hover {
-        color: $pinkColor;
-      }
-      @media (max-width: 720px) {
-        display: none;
-      }
-    }
-
-    @media (max-width: 426px) {
-      display: none;
-    }
   }
-
   .nav__menu {
     width: 598px;
     display: flex;
@@ -81,21 +64,18 @@
 
       .menu-drop-title {
         list-style: none;
-
         &:hover {
           .fa-solid {
             color: $pinkColor;
           }
         }
       }
-
       summary::-webkit-details-marker {
         display: none
       }
-
       .fa-solid {
         margin-left: 11px;
-
+        transition: .3s;
         &:hover {
           color: $pinkColor;
         }
@@ -112,7 +92,6 @@
         color: #6F6E6E;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         z-index: 1001;
-
         &-item {
           display: flex;
           align-items: center;
@@ -122,6 +101,39 @@
     }
     @media (max-width: 1150px) {
       display: none;
+    }
+  }
+
+  .nav__callOrder {
+    .nav__number {
+      //margin-right: calc(5px + (56 - 5) * ((100vw - 1300px) / (1920 - 1300)));
+      margin-right: 91px;
+      transition: .3s;
+      &:hover {
+        color: $pinkColor;
+        .fa-phone{
+          color: $pinkColor;
+        }
+      }
+      @media (max-width: 720px) {
+        display: none;
+      }
+    }
+    .fa-phone {
+      width: 18px;
+      height: 18px;
+      margin-right: 14px;
+      transition: .3s;
+    }
+    .nav__button {
+      padding: 15px 33px;
+      border: none;
+      border-radius: 12px;
+      font-size: 23px;
+      color: #fff;
+      margin-right: 30px;
+      transition: .3s;
+      background: $pinkColor;
     }
   }
 }
