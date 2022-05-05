@@ -398,6 +398,55 @@ h6 {
   transform: rotate(45deg) translate(0px, 50%);
 }
 
+.promo__title {
+  font-size: 56px;
+  line-height: 80px;
+  font-weight: 700;
+  width: 880px;
+  margin-bottom: 40px;
+}
+.promo__title span {
+  color: #CF51CE;
+}
+.promo__price {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.promo__price span {
+  font-size: 35px;
+  color: #CF51CE;
+}
+.promo .price-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 25px;
+  vertical-align: bottom;
+}
+.promo__text {
+  position: relative;
+  font-size: 25px;
+  width: 868px;
+  margin-bottom: 40px;
+}
+.promo .superman-bg {
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  width: 620px;
+  height: 563px;
+  background: url("../img/promo-stars.png") center/cover no-repeat;
+}
+.promo .superman {
+  position: absolute;
+  top: 280px;
+  right: 215px;
+  width: 560px;
+  height: 560px;
+  background: url("../img/superman.png") center/cover no-repeat;
+  z-index: 1;
+}
+
 body {
   background: #e5e5e5;
   color: #331A2F;
