@@ -33,7 +33,9 @@
     }
     &__logo_img {
       margin-right: calc(14px + (19 - 14) * ((100vw - 1280px) / (1920 - 1280)));
-
+      @media (max-width: 450px) {
+        margin: 0;
+      }
       img {
         vertical-align: revert;
         width: calc(140px + (241 - 140) * ((100vw - 360px) / (1920 - 360)));
@@ -199,6 +201,7 @@
           width: 103px;
           height: 36px;
           padding-left: 20px;
+          margin-bottom: 5px;
         }
       }
       .icon-btn {

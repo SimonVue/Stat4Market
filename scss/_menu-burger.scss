@@ -6,11 +6,15 @@
     position: relative;
     width: 42px;
     height: 28px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     transform: scale(-1, 1);
     margin-left: calc(21px + (79 - 21) * ((100vw - 770px) / (770 - 360)));
     cursor: pointer;
     z-index: 1;
+  }
+  @media (max-width: 450px) {
+    margin-left: 21px;
+    margin-bottom: 9px;
   }
 
   span,

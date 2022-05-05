@@ -119,6 +119,11 @@ h6 {
 .container .nav__logo_img {
   margin-right: calc(14px + 5 * (100vw - 1280px) / 640);
 }
+@media (max-width: 450px) {
+  .container .nav__logo_img {
+    margin: 0;
+  }
+}
 .container .nav__logo_img img {
   vertical-align: revert;
   width: calc(140px + 101 * (100vw - 360px) / 1560);
@@ -299,6 +304,7 @@ h6 {
     width: 103px;
     height: 36px;
     padding-left: 20px;
+    margin-bottom: 5px;
   }
 }
 .container .nav__callOrder .icon-btn {
@@ -325,11 +331,17 @@ h6 {
     position: relative;
     width: 42px;
     height: 28px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     transform: scale(-1, 1);
     margin-left: calc(21px + 58 * (100vw - 770px) / 410);
     cursor: pointer;
     z-index: 1;
+  }
+}
+@media (max-width: 450px) {
+  .menu-burger {
+    margin-left: 21px;
+    margin-bottom: 9px;
   }
 }
 .menu-burger span, .menu-burger::before, .menu-burger::after {
