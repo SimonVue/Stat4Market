@@ -1,5 +1,10 @@
 .promo {
+  //.container {
+  //  @media (max-width: 1270px) {
+  //    padding: 0 15px;
+  //  }
 
+  //}
   &__title {
     font-size: 56px;
     line-height: 80px;
@@ -9,6 +14,17 @@
     span {
       color: $pinkColor;
     }
+    @media (max-width: 1900px) {
+      font-size: 46px;
+      line-height: 65px;
+      width: 720px;
+    }
+    @media (max-width: 1230px) {
+      margin-bottom: 18px;
+    }
+    @media (max-width: 450px) {
+      margin-bottom: 24px;
+    }
   }
   &__price {
     font-size: 18px;
@@ -17,6 +33,9 @@
     span {
       font-size: 35px;
       color: $pinkColor;
+    }
+    @media (max-width: 1900px) {
+      margin-bottom: 40px;
     }
   }
   .price-icon {
@@ -30,6 +49,14 @@
     font-size: 25px;
     width: 868px;
     margin-bottom: 15px;
+    @media (max-width: 1900px) {
+      font-size: 20px;
+      line-height: 32px;
+      width: 711px;
+    }
+    @media (max-width: 1230px) {
+      width: 482px;
+    }
   }
   .superman-bg {
     position: absolute;
@@ -38,6 +65,15 @@
     width: 620px;
     height: 563px;
     background: url("../img/promo-stars.png") center / cover no-repeat;
+    @media (max-width: 1900px) {
+      width: 458px;
+      height: 416px;
+      top: 310px;
+      right: 30px;
+    }
+    @media (max-width: 1230px) {
+      display: none;
+    }
   }
   .superman {
     position: absolute;
@@ -47,5 +83,15 @@
     height: 560px;
     background: url("../img/superman.png") center / cover no-repeat;
     z-index: 1;
+    @media (max-width: 1900px) {
+      width: 435px;
+      height: 435px;
+      right: 30px;
+      top: 270px;
+    }
+    @media (max-width: 1230px) {
+      width: 410px;
+      height: 410px;
+    }
   }
 }

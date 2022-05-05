@@ -2,8 +2,11 @@
 
 /* Стиль списка */
 ul.breadcrumb {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   list-style: none;
+  @media (max-width: 450px) {
+    margin-bottom: 40px;
+  }
 }
 
 /* Отображение элементов списка бок о бок */
