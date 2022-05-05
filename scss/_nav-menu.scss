@@ -4,7 +4,6 @@
 
 }
 .container {
-  width: 1560px;
   max-width: 1560px;
   padding: 25px 15px;
   margin: 0 auto;
@@ -34,22 +33,7 @@
     }
     &__logo_img {
       margin-right: calc(14px + (19 - 14) * ((100vw - 1280px) / (1920 - 1280)));
-      &::after {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 1px;
-        height: calc(62px + (80 - 62) * ((100vw - 1280px) / (1920 - 1280)));
-        background: #000;
-        top: 13px;
-        right: -19px;
-        @media (max-width: 770px)  {
-          right: -14px;
-        }
-        @media (max-width: 450px)  {
-          display: none;
-        }
-      }
+
       img {
         vertical-align: revert;
         width: calc(140px + (241 - 140) * ((100vw - 360px) / (1920 - 360)));
@@ -59,14 +43,34 @@
       }
     }
     &__logo_text {
+      position: relative;
       font-size: calc(10px + (14 - 10) * ((100vw - 1280px) / (1920 - 1280)));
       line-height: calc(14px + (18 - 14) * ((100vw - 1280px) / (1920 - 1280)));
       margin-left: calc(16px + (25 - 16) * ((100vw - 770px) / (1920 - 770)));
+      @media (max-width: 1300px) {
+        margin-bottom: 5px;
+      }
       @media (max-width: 770px)  {
         font-size: 10px
       }
       @media (max-width: 450px)  {
         display: none;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: calc(62px + (80 - 62) * ((100vw - 1280px) / (1920 - 1280)));
+        background: #000;
+        top: -10px;
+        left: -19px;
+        @media (max-width: 770px)  {
+          left: -14px;
+        }
+        @media (max-width: 450px)  {
+          display: none;
+        }
       }
     }
 
@@ -78,7 +82,8 @@
       font-size: calc(18px + (24 - 18) * ((100vw - 1280px) / (1920 - 1280)));
       align-items: center;
       @media (max-width: 1300px) {
-        margin-right: 70px;
+        margin-left: 30px;
+        margin-right: 115px;
       }
       @media (max-width: 1270px) {
         margin-right: calc(20px + (70 - 20) * ((100vw - 770px) / (1280 - 770)));
@@ -167,7 +172,10 @@
       }
       .nav__button {
         position: relative;
-        padding: 13px 33px 13px 70px;
+        width: 169px;
+        height: 45px;
+        padding-left: 32px;
+        padding-bottom: 3px;
         border: none;
         border-radius: 12px;
         font-size: calc(18px + (23 - 18) * ((100vw - 1280px) / (1920 - 1280)));
@@ -178,21 +186,22 @@
           background: #963c95;
         }
         @media (max-width: 1300px) {
-          //padding: 13px 32px 13px 70px;
+          width: 152px;
         }
         @media (max-width: 770px)  {
           font-size: calc(14px + (20 - 14) * ((100vw - 360px) / (770 - 360)));
-          //padding: 14px 34px 14px 65px;
+
         }
         @media (max-width: 360px)  {
-          //padding: 10px 21px 10px 42px;
+          padding-left: 41px;
         }
       }
       .icon-btn {
         position: absolute;
         width: 23px;
         height: 23px;
-        top: calc(13px + (18 - 13) * ((100vw - 1280px) / (1920 - 1280)));
+        top: 10px;
+        //top: calc(13px + (18 - 13) * ((100vw - 1280px) / (1920 - 1280)));
         left: 30px;
         @media (max-width: 770px)  {
           width: calc(13px + (20 - 13) * ((100vw - 360px) / (770 - 360)));

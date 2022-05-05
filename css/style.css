@@ -83,7 +83,6 @@ h6 {
 }
 
 .container {
-  width: 1560px;
   max-width: 1560px;
   padding: 25px 15px;
   margin: 0 auto;
@@ -120,34 +119,20 @@ h6 {
 .container .nav__logo_img {
   margin-right: calc(14px + 5 * (100vw - 1280px) / 640);
 }
-.container .nav__logo_img::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: calc(62px + 18 * (100vw - 1280px) / 640);
-  background: #000;
-  top: 13px;
-  right: -19px;
-}
-@media (max-width: 770px) {
-  .container .nav__logo_img::after {
-    right: -14px;
-  }
-}
-@media (max-width: 450px) {
-  .container .nav__logo_img::after {
-    display: none;
-  }
-}
 .container .nav__logo_img img {
   vertical-align: revert;
   width: calc(140px + 101 * (100vw - 360px) / 1560);
 }
 .container .nav__logo_text {
+  position: relative;
   font-size: calc(10px + 4 * (100vw - 1280px) / 640);
   line-height: calc(14px + 4 * (100vw - 1280px) / 640);
   margin-left: calc(16px + 9 * (100vw - 770px) / 1150);
+}
+@media (max-width: 1300px) {
+  .container .nav__logo_text {
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 770px) {
   .container .nav__logo_text {
@@ -156,6 +141,26 @@ h6 {
 }
 @media (max-width: 450px) {
   .container .nav__logo_text {
+    display: none;
+  }
+}
+.container .nav__logo_text::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(62px + 18 * (100vw - 1280px) / 640);
+  background: #000;
+  top: -10px;
+  left: -19px;
+}
+@media (max-width: 770px) {
+  .container .nav__logo_text::after {
+    left: -14px;
+  }
+}
+@media (max-width: 450px) {
+  .container .nav__logo_text::after {
     display: none;
   }
 }
@@ -168,7 +173,8 @@ h6 {
 }
 @media (max-width: 1300px) {
   .container .nav__menu {
-    margin-right: 70px;
+    margin-left: 30px;
+    margin-right: 115px;
   }
 }
 @media (max-width: 1270px) {
@@ -254,7 +260,10 @@ h6 {
 }
 .container .nav__callOrder .nav__button {
   position: relative;
-  padding: 13px 33px 13px 70px;
+  width: 169px;
+  height: 45px;
+  padding-left: 32px;
+  padding-bottom: 3px;
   border: none;
   border-radius: 12px;
   font-size: calc(18px + 5 * (100vw - 1280px) / 640);
@@ -265,16 +274,26 @@ h6 {
 .container .nav__callOrder .nav__button:hover {
   background: #963c95;
 }
+@media (max-width: 1300px) {
+  .container .nav__callOrder .nav__button {
+    width: 152px;
+  }
+}
 @media (max-width: 770px) {
   .container .nav__callOrder .nav__button {
     font-size: calc(14px + 6 * (100vw - 360px) / 410);
+  }
+}
+@media (max-width: 360px) {
+  .container .nav__callOrder .nav__button {
+    padding-left: 41px;
   }
 }
 .container .nav__callOrder .icon-btn {
   position: absolute;
   width: 23px;
   height: 23px;
-  top: calc(13px + 5 * (100vw - 1280px) / 640);
+  top: 10px;
   left: 30px;
 }
 @media (max-width: 770px) {
