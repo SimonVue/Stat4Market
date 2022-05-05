@@ -13,7 +13,7 @@
   &__price {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     span {
       font-size: 35px;
       color: $pinkColor;
@@ -29,12 +29,12 @@
     position: relative;
     font-size: 25px;
     width: 868px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
   .superman-bg {
     position: absolute;
-    top: 300px;
-    right: 200px;
+    top: 330px;
+    right: 180px;
     width: 620px;
     height: 563px;
     background: url("../img/promo-stars.png") center / cover no-repeat;
@@ -42,7 +42,7 @@
   .superman {
     position: absolute;
     top: 280px;
-    right: 215px;
+    right: 195px;
     width: 560px;
     height: 560px;
     background: url("../img/superman.png") center / cover no-repeat;
