@@ -388,11 +388,13 @@ h6 {
 ._close::before {
   background: #CF51CE;
   top: 50%;
+  width: 32px;
   transform: rotate(-45deg) translate(0px, -50%);
 }
 ._close::after {
+  width: 32px;
   background: #CF51CE;
-  top: 45%;
+  top: 40%;
   transform: rotate(45deg) translate(0px, 50%);
 }
 
