@@ -99,7 +99,7 @@ h6 {
     padding: 17px 15px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .container {
     width: 360px;
   }
@@ -122,6 +122,16 @@ h6 {
 .container .nav__logo_img img {
   vertical-align: revert;
   width: calc(140px + 101 * (100vw - 360px) / 1560);
+}
+@media (max-width: 770px) {
+  .container .nav__logo_img img {
+    width: 187px;
+  }
+}
+@media (max-width: 450px) {
+  .container .nav__logo_img img {
+    width: 140px;
+  }
 }
 .container .nav__logo_text {
   position: relative;
@@ -284,9 +294,11 @@ h6 {
     font-size: calc(14px + 6 * (100vw - 360px) / 410);
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .container .nav__callOrder .nav__button {
-    padding-left: 41px;
+    width: 103px;
+    height: 36px;
+    padding-left: 20px;
   }
 }
 .container .nav__callOrder .icon-btn {
@@ -299,7 +311,7 @@ h6 {
 @media (max-width: 770px) {
   .container .nav__callOrder .icon-btn {
     width: calc(13px + 7 * (100vw - 360px) / 410);
-    top: calc(10px + 6 * (100vw - 360px) / 410);
+    top: calc(6px + 10 * (100vw - 360px) / 410);
     left: calc(20px + 10 * (100vw - 360px) / 410);
   }
 }
@@ -313,6 +325,7 @@ h6 {
     position: relative;
     width: 42px;
     height: 28px;
+    margin-bottom: 6px;
     transform: scale(-1, 1);
     margin-left: calc(21px + 58 * (100vw - 770px) / 410);
     cursor: pointer;
