@@ -1,28 +1,32 @@
 .promo {
   .container {
     position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 759px;
+      top: 180px;
+      right: -180px;
+      background: url("../img/BG Ellipse-small.png")center / cover no-repeat;
+      @media (max-width: 1919px) {
+        //display: none;
+      }
+    }
   }
   &__title {
     font-size: calc(26px + (56 - 26) * ((100vw - 360px) / (1920 - 360)));
     line-height: calc(39px + (80 - 39) * ((100vw - 360px) / (1920 - 360)));
     font-weight: 700;
-    //max-width: 880px;
     margin-bottom: 40px;
     span {
       color: $pinkColor;
-    }
-    @media (max-width: 1900px) {
-      //font-size: 46px;
-      //line-height: 65px;
-      //width: 720px;
     }
     @media (max-width: 1230px) {
       margin-bottom: 18px;
     }
     @media (max-width: 767px) {
       width: 210px;
-      //font-size: 26px;
-      //line-height: 39px;
     }
   }
   &__price {

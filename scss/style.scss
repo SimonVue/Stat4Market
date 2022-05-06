@@ -15,6 +15,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .container {
+  position: relative;
   max-width: 1560px;
   padding: 0 15px;
   margin: 0 auto;
@@ -30,5 +31,6 @@ body {
     width: 100%;
   }
 }
+
 
 

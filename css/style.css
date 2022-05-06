@@ -400,6 +400,15 @@ h6 {
 .promo .container {
   position: relative;
 }
+.promo .container::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 759px;
+  top: 180px;
+  right: -180px;
+  background: url("../img/BG Ellipse-small.png") center/cover no-repeat;
+}
 .promo__title {
   font-size: calc(26px + 30 * (100vw - 360px) / 1560);
   line-height: calc(39px + 41 * (100vw - 360px) / 1560);
@@ -733,6 +742,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1560px;
   padding: 0 15px;
   margin: 0 auto;
