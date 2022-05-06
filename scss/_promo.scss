@@ -62,9 +62,10 @@
       //width: 482px;
     }
     @media (max-width: 767px) {
-      //width: 330px;
+      width: 100%;
       //font-size: 18px;
       line-height: 28px;
+      margin: 0 auto;
       margin-bottom: 10px;
     }
   }
