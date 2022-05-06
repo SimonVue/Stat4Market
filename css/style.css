@@ -586,16 +586,11 @@ ul.breadcrumb li a:hover {
   font-weight: 700;
   text-align: center;
   margin: 0 auto 85px;
+  margin-bottom: calc(50px + 44 * (100vw - 360px) / 1560);
 }
 @media (max-width: 770px) {
   .story__title {
     margin-bottom: 80px;
-  }
-}
-@media (max-width: 450px) {
-  .story__title {
-    display: block;
-    margin-bottom: 50px;
   }
 }
 @media (max-width: 450px) {
@@ -654,18 +649,7 @@ ul.breadcrumb li a:hover {
   font-weight: 700;
   text-align: center;
   margin: 0 auto 85px;
-  margin-bottom: calc(20px + 15 * (100vw - 360px) / 1560);
-}
-@media (max-width: 770px) {
-  .school__title {
-    margin-bottom: 80px;
-  }
-}
-@media (max-width: 450px) {
-  .school__title {
-    display: block;
-    margin-bottom: 50px;
-  }
+  margin-bottom: 23px;
 }
 .school__subtitle {
   font-size: calc(18px + 7 * (100vw - 360px) / 1560);
@@ -674,13 +658,72 @@ ul.breadcrumb li a:hover {
   margin-bottom: calc(50px + 35 * (100vw - 360px) / 1560);
 }
 
-.icon-1 {
+.school__list {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(60px + 63 * (100vw - 768px) / 1152);
+  padding-bottom: calc(70px + 60 * (100vw - 770px) / 1150);
+}
+@media (max-width: 770px) {
+  .school__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 770px) {
+  .school__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.school__list_item {
+  width: 290px;
+}
+@media (max-width: 770px) {
+  .school__list_item {
+    width: 255px;
+  }
+}
+@media (max-width: 450px) {
+  .school__list_item {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.school__list .icon {
   width: 60px;
   height: 60px;
   background: #CF51CE;
-  color: #fff;
+  fill: #fff;
   padding: 11px;
   border-radius: 15px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1300px) {
+  .school__list .icon {
+    margin-bottom: 20px;
+  }
+}
+.school__list_title {
+  font-size: calc(18px + 6 * (100vw - 360px) / 1560);
+  line-height: calc(27px + 9 * (100vw - 360px) / 1560);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+@media (max-width: 770px) {
+  .school__list_title {
+    margin-bottom: 10px;
+  }
+}
+.school__list_text {
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 1300px) {
+  .school__list_text {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 body {

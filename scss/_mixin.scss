@@ -13,13 +13,6 @@ $pinkColor: #CF51CE;
   font-weight: 700;
   text-align: center;
   margin: 0 auto 85px;
-  @media(max-width: 770px) {
-    margin-bottom: 80px;
-  }
-  @media(max-width: 450px) {
-    display: block;
-    margin-bottom: 50px;
-  }
 }
 @mixin textStyle {
   font-size: calc(18px + (25 - 18) * ((100vw - 360px) / (1920 - 360)));

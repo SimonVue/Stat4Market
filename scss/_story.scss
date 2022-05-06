@@ -12,6 +12,10 @@
 
   &__title {
     @include header_2;
+    margin-bottom: calc(50px + (94 - 50) * ((100vw - 360px) / (1920 - 360)));
+    @media(max-width: 770px) {
+      margin-bottom: 80px;
+    }
     @media(max-width: 450px) {
       display: none;
     }
