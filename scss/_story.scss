@@ -11,17 +11,7 @@
   }
 
   &__title {
-    //width: 840px;
-    //font-size: 48px;
-    font-size: calc(24px + (48 - 24) * ((100vw - 360px) / (1920 - 360)));
-    line-height: calc(36px + (64 - 36) * ((100vw - 360px) / (1920 - 360)));
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto 85px;
-    @media(max-width: 770px) {
-      margin-bottom: 80px;
-    }
-
+    @include header_2;
     @media(max-width: 450px) {
       display: none;
     }

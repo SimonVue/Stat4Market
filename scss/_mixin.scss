@@ -7,3 +7,22 @@
 $mainColor: #331A2F;
 $pinkColor: #CF51CE;
 
+@mixin header_2 {
+  font-size: calc(24px + (48 - 24) * ((100vw - 360px) / (1920 - 360)));
+  line-height: calc(36px + (64 - 36) * ((100vw - 360px) / (1920 - 360)));
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 85px;
+  @media(max-width: 770px) {
+    margin-bottom: 80px;
+  }
+  @media(max-width: 450px) {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+@mixin textStyle {
+  font-size: calc(18px + (25 - 18) * ((100vw - 360px) / (1920 - 360)));
+  line-height: calc(28px + (40 - 28) * ((100vw - 360px) / (1920 - 360)));
+}
+

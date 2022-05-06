@@ -1,0 +1,22 @@
+
+.school {
+  &__title {
+    @include header_2;
+    margin-bottom: calc(20px + (35 - 20) * ((100vw - 360px) / (1920 - 360)));
+  }
+  &__subtitle {
+    @include textStyle;
+    text-align: center;
+    margin-bottom: calc(50px + (85 - 50) * ((100vw - 360px) / (1920 - 360)));
+  }
+}
+
+
+.icon-1 {
+  width: 60px;
+  height: 60px;
+  background: $pinkColor;
+  color: #fff;
+  padding: 11px;
+  border-radius: 15px;
+}

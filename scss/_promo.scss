@@ -48,7 +48,6 @@
 
   }
   &__text {
-    //font-size: 25px;
     font-size: calc(18px + (25 - 18) * ((100vw - 360px) / (1920 - 360)));
     width: calc(330px + (868 - 330) * ((100vw - 360px) / (1920 - 360)));
     //width: 868px;
