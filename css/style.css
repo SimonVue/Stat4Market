@@ -397,31 +397,22 @@ h6 {
   transform: rotate(45deg) translate(0px, 50%);
 }
 
+.promo .container {
+  position: relative;
+}
 .promo__title {
-  font-size: 56px;
-  line-height: 80px;
+  font-size: calc(26px + 30 * (100vw - 360px) / 1560);
+  line-height: calc(39px + 41 * (100vw - 360px) / 1560);
   font-weight: 700;
-  width: 880px;
+  width: calc(210px + 670 * (100vw - 360px) / 1560);
   margin-bottom: 40px;
 }
 .promo__title span {
   color: #CF51CE;
 }
-@media (max-width: 1900px) {
-  .promo__title {
-    font-size: 46px;
-    line-height: 65px;
-    width: 720px;
-  }
-}
 @media (max-width: 1230px) {
   .promo__title {
     margin-bottom: 18px;
-  }
-}
-@media (max-width: 450px) {
-  .promo__title {
-    margin-bottom: 24px;
   }
 }
 .promo__price {
@@ -438,6 +429,11 @@ h6 {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 1270px) {
+  .promo__price {
+    margin-bottom: 16px;
+  }
+}
 .promo .price-icon {
   width: 48px;
   height: 48px;
@@ -445,27 +441,25 @@ h6 {
   vertical-align: bottom;
 }
 .promo__text {
-  position: relative;
-  font-size: 25px;
-  width: 868px;
+  font-size: calc(18px + 7 * (100vw - 360px) / 1560);
+  width: calc(330px + 538 * (100vw - 360px) / 1560);
   margin-bottom: 15px;
 }
 @media (max-width: 1900px) {
   .promo__text {
-    font-size: 20px;
     line-height: 32px;
-    width: 711px;
   }
 }
-@media (max-width: 1230px) {
+@media (max-width: 767px) {
   .promo__text {
-    width: 482px;
+    line-height: 28px;
+    margin-bottom: 10px;
   }
 }
 .promo .superman-bg {
   position: absolute;
-  top: 330px;
-  right: 180px;
+  top: 50px;
+  right: -25px;
   width: 620px;
   height: 563px;
   background: url("../img/promo-stars.png") center/cover no-repeat;
@@ -474,7 +468,7 @@ h6 {
   .promo .superman-bg {
     width: 458px;
     height: 416px;
-    top: 310px;
+    top: 50px;
     right: 30px;
   }
 }
@@ -485,25 +479,44 @@ h6 {
 }
 .promo .superman {
   position: absolute;
-  top: 280px;
-  right: 195px;
+  top: 10px;
+  right: 0;
   width: 560px;
   height: 560px;
-  background: url("../img/superman.png") center/cover no-repeat;
   z-index: 1;
 }
 @media (max-width: 1900px) {
   .promo .superman {
+    right: 40px;
+    top: 10px;
     width: 435px;
     height: 435px;
-    right: 30px;
-    top: 270px;
+  }
+  .promo .superman img {
+    width: 435px;
+    height: 435px;
   }
 }
-@media (max-width: 1230px) {
+@media (max-width: 770px) {
   .promo .superman {
+    width: 240px;
+    overflow: hidden;
+    right: 0;
+    top: 150px;
+  }
+  .promo .superman img {
     width: 410px;
     height: 410px;
+  }
+}
+@media (max-width: 767px) {
+  .promo .superman {
+    top: -55px;
+    width: 130px;
+  }
+  .promo .superman img {
+    width: 245px;
+    height: 245px;
   }
 }
 

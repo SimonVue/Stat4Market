@@ -1,29 +1,28 @@
 .promo {
-  //.container {
-  //  @media (max-width: 1270px) {
-  //    padding: 0 15px;
-  //  }
-
-  //}
+  .container {
+    position: relative;
+  }
   &__title {
-    font-size: 56px;
-    line-height: 80px;
+    font-size: calc(26px + (56 - 26) * ((100vw - 360px) / (1920 - 360)));
+    line-height: calc(39px + (80 - 39) * ((100vw - 360px) / (1920 - 360)));
     font-weight: 700;
-    width: 880px;
+    width: calc(210px + (880 - 210) * ((100vw - 360px) / (1920 - 360)));
     margin-bottom: 40px;
     span {
       color: $pinkColor;
     }
     @media (max-width: 1900px) {
-      font-size: 46px;
-      line-height: 65px;
-      width: 720px;
+      //font-size: 46px;
+      //line-height: 65px;
+      //width: 720px;
     }
     @media (max-width: 1230px) {
       margin-bottom: 18px;
     }
-    @media (max-width: 450px) {
-      margin-bottom: 24px;
+    @media (max-width: 767px) {
+      //width: 210px;
+      //font-size: 26px;
+      //line-height: 39px;
     }
   }
   &__price {
@@ -37,38 +36,49 @@
     @media (max-width: 1900px) {
       margin-bottom: 40px;
     }
+    @media (max-width: 1270px) {
+      margin-bottom: 16px;
+    }
   }
   .price-icon {
     width: 48px;
     height: 48px;
     margin-right: 25px;
     vertical-align: bottom;
+
   }
   &__text {
-    position: relative;
-    font-size: 25px;
-    width: 868px;
+    //font-size: 25px;
+    font-size: calc(18px + (25 - 18) * ((100vw - 360px) / (1920 - 360)));
+    width: calc(330px + (868 - 330) * ((100vw - 360px) / (1920 - 360)));
+    //width: 868px;
     margin-bottom: 15px;
     @media (max-width: 1900px) {
-      font-size: 20px;
+      //font-size: 20px;
       line-height: 32px;
-      width: 711px;
+      //width: 711px;
     }
     @media (max-width: 1230px) {
-      width: 482px;
+      //width: 482px;
+    }
+    @media (max-width: 767px) {
+      //width: 330px;
+      //font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 10px;
     }
   }
   .superman-bg {
     position: absolute;
-    top: 330px;
-    right: 180px;
+    top: 50px;
+    right: -25px;
     width: 620px;
     height: 563px;
     background: url("../img/promo-stars.png") center / cover no-repeat;
     @media (max-width: 1900px) {
       width: 458px;
       height: 416px;
-      top: 310px;
+      top: 50px;
       right: 30px;
     }
     @media (max-width: 1230px) {
@@ -77,21 +87,39 @@
   }
   .superman {
     position: absolute;
-    top: 280px;
-    right: 195px;
+    top: 10px;
+    right: 0;
     width: 560px;
     height: 560px;
-    background: url("../img/superman.png") center / cover no-repeat;
+    //background: url("../img/superman.png") center / cover no-repeat;
     z-index: 1;
     @media (max-width: 1900px) {
+      right: 40px;
+      top: 10px;
       width: 435px;
       height: 435px;
-      right: 30px;
-      top: 270px;
+      img {
+        width: 435px;
+        height: 435px;
+      }
     }
-    @media (max-width: 1230px) {
-      width: 410px;
-      height: 410px;
+    @media (max-width: 770px) {
+      width: 240px;
+      overflow: hidden;
+      right: 0;
+      top: 150px;
+      img {
+        width: 410px;
+        height: 410px;
+      }
+    }
+    @media (max-width: 767px) {
+      top: -55px;
+      width: 130px;
+      img {
+        width: 245px;
+        height: 245px;
+      }
     }
   }
 }
