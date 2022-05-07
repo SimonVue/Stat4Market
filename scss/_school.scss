@@ -4,6 +4,22 @@
     @include header_2;
     margin-bottom: 23px;
   }
+  .zzz {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: calc(4px + (7 - 4) * ((100vw - 360px) / (1920 - 360)));
+      border-radius: 5px;
+      bottom: -8px;
+      left: 0;
+      background: -webkit-linear-gradient(right, rgba(124, 78, 171, 1.0), rgba(221, 81, 213, 1.0));
+      background: -moz-linear-gradient(right, rgba(124, 78, 171, 1.0), rgba(221, 81, 213, 1.0));
+      background: linear-gradient(to left, rgba(124, 78, 171, 1.0), rgba(221, 81, 213, 1.0));
+
+    }
+  }
   &__subtitle {
     @include textStyle;
     text-align: center;
