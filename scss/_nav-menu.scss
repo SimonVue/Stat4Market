@@ -10,7 +10,26 @@
   @media (max-width: 450px) {
     margin-bottom: 40px;
   }
-
+  &::after {
+    position: absolute;
+    content: '';
+    width: 134px;
+    height: 783px;
+    top: -72px;
+    left: calc(-121px + ((-40) - (-121)) * ((100vw - 1280px) / (1920 - 1280)));
+    background: url("../img/BG Ellipse.png")center / cover no-repeat;
+    overflow: hidden;
+    @media (max-width: 1300px) {
+      width: 446px;
+      height: 446px;
+      top: -90px;
+      left: -415px;
+      background: url("../img/BG Ellipse-3.png")center / cover no-repeat;
+    }
+    @media (max-width: 770px) {
+      display: none;
+    }
+  }
 }
 
 

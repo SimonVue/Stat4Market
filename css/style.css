@@ -102,6 +102,30 @@ h6 {
     margin-bottom: 40px;
   }
 }
+.header::after {
+  position: absolute;
+  content: "";
+  width: 134px;
+  height: 783px;
+  top: -72px;
+  left: calc(-121px + 81 * (100vw - 1280px) / 640);
+  background: url("../img/BG Ellipse.png") center/cover no-repeat;
+  overflow: hidden;
+}
+@media (max-width: 1300px) {
+  .header::after {
+    width: 446px;
+    height: 446px;
+    top: -90px;
+    left: -415px;
+    background: url("../img/BG Ellipse-3.png") center/cover no-repeat;
+  }
+}
+@media (max-width: 770px) {
+  .header::after {
+    display: none;
+  }
+}
 
 .nav {
   display: flex;
@@ -408,6 +432,11 @@ h6 {
   top: 180px;
   right: -180px;
   background: url("../img/BG Ellipse-small.png") center/cover no-repeat;
+}
+@media (max-width: 1900px) {
+  .promo .container::after {
+    display: none;
+  }
 }
 .promo__title {
   font-size: calc(26px + 30 * (100vw - 360px) / 1560);
