@@ -69,10 +69,6 @@ ul li {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
-}
-
 h1,
 h2,
 h3,
@@ -148,7 +144,7 @@ h6 {
   }
 }
 .nav__logo_img img {
-  vertical-align: revert;
+  vertical-align: super;
   width: calc(140px + 101 * (100vw - 360px) / 1560);
 }
 @media (max-width: 1300px) {
@@ -159,6 +155,7 @@ h6 {
 @media (max-width: 450px) {
   .nav__logo_img img {
     width: 140px;
+    vertical-align: top;
   }
 }
 .nav__logo_text {
@@ -335,6 +332,11 @@ h6 {
     padding-left: 20px;
   }
 }
+@media (max-width: 350px) {
+  .nav__callOrder .nav__button {
+    display: none;
+  }
+}
 .nav__callOrder .nav__button p {
   color: #fff;
   margin: 0 auto 0 14px;
@@ -457,6 +459,12 @@ h6 {
     width: 210px;
   }
 }
+@media (max-width: 350px) {
+  .promo__title {
+    font-size: 19px;
+    line-height: 33px;
+  }
+}
 .promo__price {
   font-size: 18px;
   font-weight: 600;
@@ -565,39 +573,31 @@ h6 {
 }
 
 /* Стиль списка */
-ul.breadcrumb {
+.breadcrumb {
   margin-bottom: 15px;
   list-style: none;
 }
 @media (max-width: 450px) {
-  ul.breadcrumb {
+  .breadcrumb {
     margin-bottom: 40px;
   }
 }
-
-/* Отображение элементов списка бок о бок */
-ul.breadcrumb li {
+.breadcrumb__item {
   display: inline;
   font-size: 16px;
 }
-
-/* Добавить символ черты (-) перед/за каждым элементом списка */
-ul.breadcrumb li + li:before {
+.breadcrumb__item_line:before {
   padding: 0 8px;
   color: rgba(51, 26, 47, 0.5);
   content: "—";
 }
-
-/* Добавить цвет для всех ссылок внутри списка */
-ul.breadcrumb li a {
+.breadcrumb a {
   color: rgba(51, 26, 47, 0.5);
   text-decoration: none;
+  transition: 0.3s;
 }
-
-/* Добавить цвет на наведении курсора мыши */
-ul.breadcrumb li a:hover {
+.breadcrumb a:hover {
   color: #CF51CE;
-  text-decoration: underline;
 }
 
 .story {

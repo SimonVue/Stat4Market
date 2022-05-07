@@ -28,6 +28,10 @@
     @media (max-width: 767px) {
       width: 210px;
     }
+    @media (max-width: 350px) {
+      font-size: 19px;
+      line-height: 33px;
+    }
   }
   &__price {
     font-size: 18px;
