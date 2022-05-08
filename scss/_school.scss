@@ -4,7 +4,7 @@
     @include header_2;
     margin-bottom: 23px;
   }
-  .zzz {
+  .stat4market {
     position: relative;
     &:after {
       position: absolute;
@@ -31,21 +31,22 @@
   justify-content: space-between;
   gap: calc(60px + (123 - 60) * ((100vw - 768px) / (1920 - 768)));
   padding-bottom: calc(70px + (130 - 70) * ((100vw - 770px) / (1920 - 770)));
-  @media(max-width: 770px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  @media(max-width: 770px) {
+  @media(max-width: 950px) {
     flex-wrap: wrap;
     justify-content: center;
   }
   &_item {
     width: 290px;
+
+    @media(max-width: 1300px) {
+      width: 225px;
+    }
     @media(max-width: 770px) {
       width: 255px;
     }
-    @media(max-width: 450px) {
-      margin: 0 auto;
+    @media(max-width: 590px) {
+      width: 100%;
+      //margin: 0 auto;
       text-align: center;
     }
   }
