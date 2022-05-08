@@ -2,126 +2,190 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "Course",
+         "name": "Обучающие курсы для поставщиков на маркетплейсы",
+         "description": "Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров",
+         "provider": {
+            "@type": "Organization",
+            "name": "stat4market - Надежный сервис аналитики для поставщиков на маркетплейсы",
+            "sameAs": "https://stat4market.edu"
+         }
+      }
+   </script>
+   <script type="application/ld+json">
+      {
+         "@context": "//schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement":
+         [
+            {"@type": "ListItem",
+               "position": 1,
+               "item": {
+                  "name": "Главная"}
+            },
+            {"@type": "ListItem",
+               "position": 2,
+               "item": {
+                  "name": "Обучение"}
+            }
+         ]
+      }
+   </script>
    <script src="https://kit.fontawesome.com/6bab9975c9.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>stat4market</title>
+   <link rel="shortcut icon" href="favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>stat4market</title>
 </head>
 
 <body>
 <div class="container">
-  <!------------   header   ------------>
-  <header class="header">
+
+   <!------------   header   ------------>
+   <header class="header">
       <nav class="nav">
-        <div class="nav__logo">
-          <div class="nav__logo_img"><a href="#"><img src="img/icons/logo.svg" alt="logo"></a></div>
-          <p class="nav__logo_text">Надежный сервис<br>
-            аналитики для поставщиков<br>
-            на маркетплейсы</p>
-        </div>
-        <ul class="nav__menu">
-          <li><details class="nav__menu-drop">
-            <summary class="menu-drop-title nav__menu-list-item">Аналитика<i class="fa-solid fa-caret-down"></i></summary>
-            <div class="submenu-drop">
-              <a  class="submenu-drop-item" href="#">ссылка 1</a>
-              <a  class="submenu-drop-item" href="#">ссылка 2</a>
-              <a  class="submenu-drop-item" href="#">ссылка 3</a>
-              <a  class="submenu-drop-item" href="#">ссылка 4</a>
-            </div>
-          </details></li>
-          <li><a href="#" class="nav__menu-list-item">Обучение</a></li>
-        </ul>
-        <div class="nav__callOrder">
-          <a href="tel:+74994503141" class="nav__number"><i class="fa-solid fa-phone"></i> 8 (499) 450-31-41</a>
-          <button class="nav__button" href="#"><svg class="icon-btn"><use xlink:href="img/sprite.svg#icon-btn"></use></svg><p>Войти</p></button>
-        </div>
-        <div class="menu-burger">
-          <span></span>
-        </div>
+         <div class="nav__logo">
+            <div class="nav__logo_img"><a target="_blank" href="#"><img src="img/icons/logo.svg" alt="logo"></a></div>
+            <p class="nav__logo_text">Надежный сервис<br>
+               аналитики для поставщиков<br>
+               на маркетплейсы</p>
+         </div>
+         <ul class="nav__menu">
+            <li>
+               <details class="nav__menu-drop">
+                  <summary class="menu-drop-title nav__menu-list-item">Аналитика<i class="fa-solid fa-caret-down"></i>
+                  </summary>
+                  <div class="submenu-drop">
+                     <a class="submenu-drop-item" href="#" target="_blank">ссылка 1</a>
+                     <a class="submenu-drop-item" href="#" target="_blank">ссылка 2</a>
+                     <a class="submenu-drop-item" href="#" target="_blank">ссылка 3</a>
+                     <a class="submenu-drop-item" href="#" target="_blank">ссылка 4</a>
+                  </div>
+               </details>
+            </li>
+            <li><a href="#" class="nav__menu-list-item" target="_blank">Обучение</a></li>
+         </ul>
+         <div class="nav__callOrder">
+            <a href="tel:+74994503141" class="nav__number"><i class="fa-solid fa-phone"></i> 8 (499) 450-31-41</a>
+            <button class="nav__button" href="#">
+               <svg class="icon-btn">
+                  <use xlink:href="img/sprite.svg#icon-btn"></use>
+               </svg>
+               <p>Войти</p></button>
+         </div>
+         <div class="menu-burger">
+            <span></span>
+         </div>
       </nav>
-  </header>
+   </header>
 
-  <!-----------  Пагинация   ------------>
-  <section class="pagination">
+   <!-----------  Хлебные крошки   ------------>
+   <section class="breadcrumbs">
       <ul class="breadcrumb">
-        <li class="breadcrumb__item"><a href="#">Главная</a></li>
-        <li class="breadcrumb__item breadcrumb__item_line"><a href="#">Обучение</a></li>
+         <li class="breadcrumb__item"><a href="#" target="_blank">Главная</a></li>
+         <li class="breadcrumb__item breadcrumb__item_line"><a href="#" target="_blank">Обучение</a></li>
       </ul>
-  </section>
+   </section>
 
-  <!-----------  promo   ------------>
-  <section class="promo">
+   <!-----------  promo   ------------>
+   <section class="promo">
       <div class="promo__info">
-        <h1 class="promo__title"><span>Обучающие курсы</span> для<br> поставщиков на маркетплейсы</h1>
-        <div class="promo__price"><svg class="price-icon"><use xlink:href="img/sprite.svg#price-icon"></use></svg>от <span>19 900 </span>  ₽</div>
-        <p class="promo__text">Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров</p>
-        <p class="promo__text">Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают маркетплейсы и никогда не вдаемся
-          в теорию, которая не понадобится на практике.
-        </p>
-        <p class="promo__text">Наши уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.</p>
+         <h1 class="promo__title"><span>Обучающие курсы</span> для<br> поставщиков на маркетплейсы</h1>
+         <div class="promo__price">
+            <svg class="price-icon">
+               <use xlink:href="img/sprite.svg#price-icon"></use>
+            </svg>
+            от <span>19 900 </span> ₽
+         </div>
+         <p class="promo__text">Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров</p>
+         <p class="promo__text">Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем,
+            как работают маркетплейсы и никогда не вдаемся
+            в теорию, которая не понадобится на практике.
+         </p>
+         <p class="promo__text">Наши уроки помогут понять логику работы площадок и взять управление продажами в свои
+            руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.</p>
       </div>
       <div class="promo__img">
-        <div class="superman"><img src="img/superman.webp" alt="img"></div>
-        <div class="superman-bg"></div>
+         <div class="superman"><img src="img/superman.webp" alt="img"></div>
+         <div class="superman-bg"></div>
       </div>
-  </section>
+   </section>
 
-  <!-----------  story   ------------>
-  <section class="story">
+   <!-----------  story   ------------>
+   <section class="story">
       <h2 class="story__title">Небольшая предистория о том,<br> почему нам можно доверять</h2>
       <h2 class="story__title story__title_variant">Как работает модуль Аналитика по API для Wildberries?</h2>
       <div class="story__descr">
-        <img class="story__descr_img" src="img/story-1.webp" alt="img">
-        <p class="story__descr_text">Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.</p>
+         <img class="story__descr_img" src="img/story-1.webp" alt="img">
+         <p class="story__descr_text">Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в
+            крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили
+            большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с
+            блогерами.</p>
       </div>
       <div class="story__descr">
-        <div class="story__descr_text">
-          <p class="text_dawn">Летом 2019 года мы вышли на маркетплейсы и после работы с ними в течение 2 месяцев приняли решение развивать только это направление. И не прогадали. Весь накопленный опыт мы направили на улучшение и продвижение наших брендов.</p>
-          <p>Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии stat4market.</p>
-        </div>
-        <img class="story__descr_img" src="img/story-2.webp" alt="img">
+         <div class="story__descr_text">
+            <p class="text_dawn">Летом 2019 года мы вышли на маркетплейсы и после работы с ними в течение 2 месяцев
+               приняли решение развивать только это направление. И не прогадали. Весь накопленный опыт мы направили на
+               улучшение и продвижение наших брендов.</p>
+            <p>Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии
+               stat4market.</p>
+         </div>
+         <img class="story__descr_img" src="img/story-2.webp" alt="img">
       </div>
-  </section>
+   </section>
 
-  <!-----------  school  ------------>
-  <section class="school">
-      <h2 class="school__title">Обучение по продажам на<br> маркетплейсах от <span class="stat4market">stat<span style="color: #EA5DBB; text-decoration: none;">4</span>market</span></h2>
+   <!-----------  school  ------------>
+   <section class="school">
+      <h2 class="school__title">Обучение по продажам на<br> маркетплейсах от <span class="stat4market">stat<span
+         style="color: #EA5DBB; text-decoration: none;">4</span>market</span></h2>
       <p class="school__subtitle">«Увеличение реальной прибыли, конкретика и ключевые инструменты,<br>
-        которые дают результат» — на этом тезисе созданы наши курсы</p>
+         которые дают результат» — на этом тезисе созданы наши курсы</p>
       <ul class="school__list">
-        <li class="school__list_item">
-          <svg class="icon icon-1"><use xlink:href="img/sprite.svg#icon-1"></use></svg>
-          <h3 class="school__list_title">Наше обучение построено очень лаконично и просто</h3>
-          <p class="school__list_text">Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.</p>
-        </li>
-        <li class="school__list_item">
-          <svg class="icon icon-2"><use xlink:href="img/sprite.svg#icon-2"></use></svg>
-          <h3 class="school__list_title">Ко всем урокам есть дополнительные материалы</h3>
-          <p class="school__list_text">Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.</p>
-        </li>
-        <li class="school__list_item">
-          <svg class="icon icon-3"><use xlink:href="img/sprite.svg#icon-3"></use></svg>
-          <h3 class="school__list_title">Наше обучение — практика-ориентированное</h3>
-          <p class="school__list_text">Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные знания на практике.</p>
-        </li>
-        <li class="school__list_item">
-          <svg class="icon icon-4"><use xlink:href="img/sprite.svg#icon-4"></use></svg>
-          <h3 class="school__list_title">Создатели нашей Академии</h3>
-          <p class="school__list_text">Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также профессиональные лекторы и методологи.</p>
-        </li>
+         <li class="school__list_item">
+            <svg class="icon icon-1">
+               <use xlink:href="img/sprite.svg#icon-1"></use>
+            </svg>
+            <h3 class="school__list_title">Наше обучение построено очень лаконично и просто</h3>
+            <p class="school__list_text">Все занятия короткие по продолжительности для легкого восприятия и понимания.
+               Мы даем в уроках только конкретику, без лишней теории и “воды”.</p>
+         </li>
+         <li class="school__list_item">
+            <svg class="icon icon-2">
+               <use xlink:href="img/sprite.svg#icon-2"></use>
+            </svg>
+            <h3 class="school__list_title">Ко всем урокам есть дополнительные материалы</h3>
+            <p class="school__list_text">Презентации, краткие инструкции, чек-листы и памятки по работе с
+               маркетплейсами.</p>
+         </li>
+         <li class="school__list_item">
+            <svg class="icon icon-3">
+               <use xlink:href="img/sprite.svg#icon-3"></use>
+            </svg>
+            <h3 class="school__list_title">Наше обучение — практика-ориентированное</h3>
+            <p class="school__list_text">Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут
+               тебе закрепить полученные знания на практике.</p>
+         </li>
+         <li class="school__list_item">
+            <svg class="icon icon-4">
+               <use xlink:href="img/sprite.svg#icon-4"></use>
+            </svg>
+            <h3 class="school__list_title">Создатели нашей Академии</h3>
+            <p class="school__list_text">Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты
+               компании stat4market, а также профессиональные лекторы и методологи.</p>
+         </li>
       </ul>
-  </section>
+   </section>
 </div>
 
-
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

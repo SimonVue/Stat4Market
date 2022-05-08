@@ -1,4 +1,4 @@
-/* Стиль списка */
+
 .breadcrumb {
   margin-bottom: 15px;
   list-style: none;
@@ -27,7 +27,6 @@
 
     &:hover {
       color: $pinkColor;
-      //text-decoration: underline;
     }
   }
 }
