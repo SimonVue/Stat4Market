@@ -337,12 +337,12 @@ h6 {
     display: none;
   }
 }
-.nav__callOrder .nav__button p {
+.nav__callOrder .nav__button span {
   color: #fff;
   margin: 0 auto 0 14px;
 }
 @media (max-width: 450px) {
-  .nav__callOrder .nav__button p {
+  .nav__callOrder .nav__button span {
     margin-left: 8px;
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
    <meta charset="UTF-8">
@@ -60,11 +60,11 @@
 <body>
 <div class="container">
 
-   <!------------   header   ------------>
+   <!----------  header   ------------>
    <header class="header">
       <nav class="nav">
-         <div class="nav__logo" itemprop="logo" itemscope itemtype="//schema.org/ImageObject">
-            <div class="nav__logo_img"><a target="_blank" href="#"><img itemprop="url" src="img/icons/logo.svg" alt="logo"></a></div>
+         <div class="nav__logo" >
+            <div class="nav__logo_img"><a target="_blank" href="#"><img src="img/icons/logo.svg" alt="logo"></a></div>
             <p class="nav__logo_text">Надежный сервис<br>
                аналитики для поставщиков<br>
                на маркетплейсы</p>
@@ -86,11 +86,11 @@
          </ul>
          <div class="nav__callOrder">
             <a href="tel:+74994503141" class="nav__number"><i class="fa-solid fa-phone"></i> 8 (499) 450-31-41</a>
-            <button class="nav__button" href="#">
+            <button class="nav__button">
                <svg class="icon-btn">
                   <use xlink:href="img/sprite.svg#icon-btn"></use>
                </svg>
-               <p>Войти</p></button>
+               <span>Войти</span></button>
          </div>
          <div class="menu-burger">
             <span></span>
@@ -99,12 +99,12 @@
    </header>
 
    <!-----------  Хлебные крошки   ------------>
-   <section class="breadcrumbs">
+   <div class="breadcrumbs">
       <ul class="breadcrumb">
          <li class="breadcrumb__item"><a href="#" target="_blank">Главная</a></li>
          <li class="breadcrumb__item breadcrumb__item_line"><a href="#" target="_blank">Обучение</a></li>
       </ul>
-   </section>
+   </div>
 
    <!-----------  promo   ------------>
    <section class="promo">
@@ -131,7 +131,7 @@
    </section>
 
    <!-----------  story   ------------>
-   <section class="story" itemscope itemtype="//schema.org/Article">
+   <section class="story" itemscope itemtype="/schema.org/Article">
       <h2 class="story__title" itemprop="headline">Небольшая предистория о том,<br> почему нам можно доверять</h2>
       <h2 class="story__title story__title_variant" itemprop="headline">Как работает модуль Аналитика по API для Wildberries?</h2>
       <div class="story__descr">
@@ -154,7 +154,7 @@
    </section>
 
    <!-----------  school  ------------>
-   <section class="school" itemscope itemtype = "//schema.org/Product">
+   <section class="school" itemscope itemtype = "/schema.org/Product">
       <h2 class="school__title">Обучение по продажам на<br> маркетплейсах от <span class="stat4market">stat<span
          style="color: #EA5DBB; text-decoration: none;">4</span>market</span></h2>
       <p class="school__subtitle" itemprop = "slogan">«Увеличение реальной прибыли, конкретика и ключевые инструменты,<br>
