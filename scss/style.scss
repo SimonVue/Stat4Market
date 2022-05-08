@@ -2,6 +2,10 @@
 @import "_import_styles";
 @import "_nav-menu";
 @import "_menu-burger";
+@import "_promo.scss";
+@import "_breadcrumb.scss";
+@import "story";
+@import "school";
 
 
 
@@ -10,4 +14,23 @@ body {
   color: $mainColor;
   font-family: 'Lato', sans-serif;
 }
+.container {
+  position: relative;
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+  @media (max-width: 768px) {
+    max-width: 767px;
+    padding: 0 15px;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+}
+
+
 

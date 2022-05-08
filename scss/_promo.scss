@@ -1,0 +1,139 @@
+.container {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 759px;
+    top: 450px;
+    right: -180px;
+    background: url("../img/BG Ellipse-small.png")center / cover no-repeat;
+    @media (max-width: 1900px) {
+      display: none;
+    }
+  }
+}
+.promo {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    font-size: calc(26px + (56 - 26) * ((100vw - 360px) / (1920 - 360)));
+    line-height: calc(39px + (80 - 39) * ((100vw - 360px) / (1920 - 360)));
+    font-weight: 700;
+    margin-bottom: 22px;
+    span {
+      color: $pinkColor;
+    }
+    @media (max-width: 1290px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1230px) {
+      margin-bottom: 18px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 24px;
+      width: 70%;
+    }
+    @media (max-width: 350px) {
+      font-size: 19px;
+      line-height: 33px;
+    }
+  }
+  &__price {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    span {
+      font-size: 35px;
+      color: $pinkColor;
+    }
+    @media (max-width: 1900px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1270px) {
+      margin-bottom: 16px;
+    }
+  }
+  .price-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 25px;
+    vertical-align: bottom;
+
+  }
+  &__text {
+    font-size: calc(18px + (25 - 18) * ((100vw - 360px) / (1920 - 360)));
+    width: calc(330px + (868 - 330) * ((100vw - 360px) / (1920 - 360)));
+    margin-bottom: 15px;
+    @media (max-width: 1900px) {
+      line-height: 32px;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+      line-height: 28px;
+      margin: 0 auto 10px;
+    }
+  }
+  &__img {
+    position: relative;
+    @media (max-width: 1100px) {
+      position: absolute;
+      right: 0;
+      top: 320px;
+      overflow: hidden;
+    }
+    @media (max-width: 760px) {
+      top: 160px;
+      right: 0;
+    }
+
+    .superman {
+      width: 560px;
+      height: 560px;
+      @media (max-width: 1300px) {
+        width: 435px;
+        height: 435px;
+        img {
+          width: 435px;
+          height: 435px;
+        }
+      }
+      @media (max-width: 1100px) {
+        //width: 54%;
+        overflow: hidden;
+        width: 240px;
+        height: 410px;
+        img {
+          width: 410px;
+          height: 410px;
+        }
+      }
+      @media (max-width: 760px) {
+        width: 135px;
+        height: 245px;
+        img {
+          width: 245px;
+          height: 245px;
+        }
+      }
+    }
+    .superman-bg {
+      position: absolute;
+      top: 40px;
+      right: -30px;
+      width: 620px;
+      height: 563px;
+      background: url("../img/promo-stars.webp") center / cover no-repeat;
+      z-index: -1;
+      @media (max-width: 1300px) {
+        width: 458px;
+        height: 416px;
+        right: 0;
+      }
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+
+}

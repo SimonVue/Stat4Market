@@ -1,0 +1,33 @@
+
+.breadcrumb {
+  margin-bottom: 15px;
+  list-style: none;
+  @media (max-width: 450px) {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    display: inline;
+    font-size: 16px;
+
+    &_line {
+      &:before {
+        padding: 0 8px;
+        color: rgba(51, 26, 47, 0.5);
+        content: "\2014";
+      }
+    }
+  }
+
+
+  a {
+    color: rgba(51, 26, 47, 0.5);
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+      color: $pinkColor;
+    }
+  }
+}
+
